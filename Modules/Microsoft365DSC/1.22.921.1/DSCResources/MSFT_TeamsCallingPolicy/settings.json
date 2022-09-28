@@ -1,0 +1,16 @@
+﻿{
+    "resourceName": "TeamsCallingPolicy",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        }
+    }
+}

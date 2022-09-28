@@ -1,0 +1,30 @@
+﻿{
+    "resourceName": "TeamsTeam",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": [
+                    {
+                        "name": "Group.ReadWrite.All"
+                    },
+                    {
+                        "name": "User.Read.All"
+                    }
+                ]
+            },
+            "application": {
+                "read": [],
+                "update": [
+                    {
+                        "name": "Group.ReadWrite.All"
+                    },
+                    {
+                        "name": "User.Read.All"
+                    }
+                ]
+            }
+        }
+    }
+}

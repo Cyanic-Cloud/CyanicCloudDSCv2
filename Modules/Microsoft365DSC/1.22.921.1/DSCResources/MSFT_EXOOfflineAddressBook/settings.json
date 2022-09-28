@@ -1,0 +1,22 @@
+﻿{
+    "resourceName": "EXOOfflineAddressBook",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "Address Lists"
+            ],
+            "requiredrolegroups": []
+        }
+    }
+}

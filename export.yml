@@ -1,0 +1,23 @@
+trigger: none
+
+pool: CloudSync
+
+steps:
+- checkout: self
+  persistCredentials: true # so we can push commits later
+  displayName: Checkout sources
+
+- powershell: .\export.ps1
+  displayName: Run export
+  env:
+    # pass secure variables to the script
+    AAD_USERNAME: $(AAD_USERNAME) 
+    AAD_PASSWORD: $(AAD_PASSWORD)
+
+- task: PublishPipelineArtifact@1
+  displayName: Publish sources
+  condition: always()
+  continueOnError: true
+  inputs:
+    targetPath: $(Build.SourcesDirectory)\artifacts
+    artifactName: Export

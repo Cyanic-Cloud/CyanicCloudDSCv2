@@ -1,0 +1,23 @@
+﻿{
+    "resourceName": "EXOApplicationAccessPolicy",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "View-Only Configuration",
+                "Organization Configuration"
+            ],
+            "requiredrolegroups": "Organization Management"
+        }
+    }
+}

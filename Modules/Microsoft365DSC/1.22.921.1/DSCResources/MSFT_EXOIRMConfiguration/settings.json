@@ -1,0 +1,26 @@
+﻿{
+    "resourceName": "EXOIRMConfiguration",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "Information Rights Management",
+                "View-Only Configuration"
+            ],
+            "requiredrolegroups": [
+                "Organization Management",
+                "Compliance Management"
+            ]
+        }
+    }
+}

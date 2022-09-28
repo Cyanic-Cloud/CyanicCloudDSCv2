@@ -1,0 +1,24 @@
+﻿{
+    "resourceName": "EXOTransportConfig",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "Organization Transport Settings",
+                "View-Only Configuration",
+                "Journaling"
+            ],
+            "requiredrolegroups": "Organization Management"
+        }
+    }
+}

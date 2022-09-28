@@ -1,0 +1,26 @@
+﻿{
+    "resourceName": "EXODataClassification",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "Data Loss Prevention",
+                "View-Only Configuration"
+            ],
+            "requiredrolegroups": [
+                "Organization Management",
+                "Compliance Management"
+            ]
+        }
+    }
+}

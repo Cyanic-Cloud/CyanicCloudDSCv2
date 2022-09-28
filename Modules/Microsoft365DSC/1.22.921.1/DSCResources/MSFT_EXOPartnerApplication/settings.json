@@ -1,0 +1,23 @@
+﻿{
+    "resourceName": "EXOPartnerApplication",
+    "description": "",
+    "permissions": {
+        "graph": {
+            "delegated": {
+                "read": [],
+                "update": []
+            },
+            "application": {
+                "read": [],
+                "update": []
+            }
+        },
+        "exchange": {
+            "requiredroles": [
+                "Organization Client Access",
+                "View-Only Configuration"
+            ],
+            "requiredrolegroups": "Organization Management"
+        }
+    }
+}
